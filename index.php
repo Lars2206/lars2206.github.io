@@ -1,78 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
+<link rel="stylesheet" href="styles.css" >
 <style>
-body {
-  font-size: 28px;
-}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
-
-.column {
-  float: left;
-  padding: 2px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
 </style>
 </head>
 <body>
 
-<div class="header">
-  
-<div class="row" style="background-color:lightgreen">
-  <div class="column" style="height:226px">
-    <img src="img/PsychoTheRapist.jpg" alt="Snow">
-  </div>
-  <div class="column">
-    <img src="img/WineTherapy.png" alt="WineTherapy">
-  </div>
-  <div class="column">
-    <img src="img/Mountain.jpg" alt="Snow">
-  </div>
-</div>
-</div>
-
-<ul>
-  <li><a class="active" >Startseite</a></li>
-  <li><a href="Leistungen.html">Leistungen</a></li>
-  <li><a href="Kontakt.html">Kontakt</a></li>
-</ul>
-
+<?php include('Navbar.html'); ?>
 
 <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
