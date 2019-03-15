@@ -66,9 +66,9 @@ li a:hover {
 </div>
 
 <ul id=Navbar>
-  <li id=Startseite><a class="active" >Startseite</a></li>
-  <li id=Leistungen><a href="Leistungen.html">Leistungen</a></li>
-  <li id=Kontakt><a href="Kontakt.html">Kontakt</a></li>
+  <li id=Startseite><a class="<?php echo ($page == "index.php" ? "active" : "")?>" href="index.php" >Startseite</a></li>
+  <li id=Leistungen><a class="<?php echo ($page == "Leistungen.php" ? "active" : "")?>" href="Leistungen.php">Leistungen</a></li>
+  <li id=Kontakt><a class="<?php echo ($page == "Kontakt.php" ? "active" : "")?>" href="Kontakt.php">Kontakt</a></li>
 </ul>
 
 
