@@ -40,7 +40,7 @@ input[type=submit]:hover {
 
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -59,11 +59,18 @@ input[type=submit]:hover {
   <div class="row">
     <div class="column" style="float: left;
     width: 40%;">
+      <p><b>Anschrift:</b></p>      
+      <p>Günther-Scharofsky-Straße 2A <br>
+      91058 Erlangen <br>
+      Tel: 0151xxxxxxx <br>
+      Fax: 6549867654asd654as6d84
+      </p>
+      <p></p>
       
-<iframe style='height:450px;width:100%;' src=https://maps.google.de/maps?hl=de&q=%20Günther-Scharowsky-Straße+2A%20Erlangen&t=&z=15&ie=utf8&iwloc=b&output=embed 
+<iframe style='height:400px;width:100%;' src=https://maps.google.de/maps?hl=de&q=%20Günther-Scharowsky-Straße+2A%20Erlangen&t=&z=15&ie=utf8&iwloc=b&output=embed 
     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     <p style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;">
-      <a href="http://www.checkpoll.de/google-maps-generator/" style="font-size:10px;" target="_blank"></a></p></div>
+      <a  style="font-size:10px;" target="_blank"></a></p></div>
   
     
     <div class="column" style="float: right;

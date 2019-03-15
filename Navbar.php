@@ -44,7 +44,10 @@ li a:hover {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color:lightgreen;
+  color: #111;
+  font-weight: bold;
+  
 }
 </style>
 </head>
