@@ -4,18 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
-li {
-  float: left;
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -25,6 +16,22 @@ ul {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+}
+
+
+.column {
+  float: left;
+  padding: 2px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+li {
+  float: left;
 }
 
 li a {
@@ -42,6 +49,13 @@ li a:hover {
 .active {
   background-color: #4CAF50;
 }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
 /* Style inputs */
 input[type=text], input[type=email], select, textarea {
   width: 100%;
@@ -71,19 +85,8 @@ input[type=submit]:hover {
 }
 
 /* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -96,7 +99,7 @@ input[type=submit]:hover {
 </head>
 <body>
 
-        <div class="header">
+<div class="header">
   
                 <div class="row" style="background-color:lightgreen">
                   <div class="column" style="height:226px">
@@ -120,10 +123,11 @@ input[type=submit]:hover {
 
 <div class="container" >
   <div style="text-align:center; background-color:lightgreen;">
-    <h2>Kontaktieren sie mich</h2>
+   
   </div>
   <div class="row">
-    <div class="column">
+    <div class="column" style="float: left;
+    width: 50%;">
       
 <iframe style='height:450px;width:100%;' src=https://maps.google.de/maps?hl=de&q=%20Günther-Scharowsky-Straße+2A%20Erlangen&t=&z=15&ie=utf8&iwloc=b&output=embed 
     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -131,7 +135,10 @@ input[type=submit]:hover {
       <a href="http://www.checkpoll.de/google-maps-generator/" style="font-size:10px;" target="_blank"></a></p></div>
   
     
-    <div class="column">
+    <div class="column" style="float: right;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;">
       <form action="/action_page.php">
         <label for="fname">E-Mail Adresse</label>
         <input type="email" id="email" name="E-Mail" placeholder="test@server.com">
